@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>StayOnTrack: Employee Attrition</title>
+    <link rel="stylesheet" href="static/style.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 id="main-title">StayOnTrack: <br />Navigating Employee Attrition with Precision</h1>
+    <p id="desc">A web-application for descriptive and predictive employee attrition</p>
+
+    <!-- Form -->
+    <form method="POST" action="/">
+        <!-- 3 grids -->
+        <div class="box">
+            <h3>Employee Profile</h3>
+            <div class="form-row">
+                <!-- g -->
+                <div class="form-group col-md-4">
+                    <label>Gender</label>
+                    <select name="gender" id="gender" class="form-control">
+                        <option>Female</option>
+                        <option>Male</option>
+                    </select>
+                </div>
+                <!-- g -->
+                <div class="form-group col-md-4">
+                    <label>Age</label>
+                    <input name="age" type="number" class="form-control">
+                </div>
+                <!-- g -->
+                <div class="form-group col-md-2">
+                    <label>Marital Status</label>
+                    <select name="marital_status" class="form-control">
+                        <option>Single</option>
+                        <option>Married</option>
+                        <option>Divorced</option>
+                    </select>
+                </div>
+                
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Number Of Companies Worked</label>
+                    <input name="number_of_companies_worked" type="number" class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Total Working Years</label>
+                    <input name="total_working_years" type="number" class="form-control">
+                </div>
+            </div>
+            <!-- 2 grids -->
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Education</label>
+                    <input name="education" type="number" class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Education Field</label>
+                    <select name="education_field" class="form-control">
+                        <option>Life Sciences</option>
+                        <option>Medical</option>
+                        <option>Marketing</option>
+                        <option>Technical Degree</option>
+                        <option>Human Resources</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="box">
+            <h3>Job Profile</h3>
+            <h4>Salary</h4>
+            <!-- 4 grids -->
+            <div class="form-row">
+                <div class="form-group col-md-1">
+                    <label>Daily Rate</label>
+                    <input name="daily_rate" type="number" class="form-control">
+                </div>
+                <div class="form-group col-md-2">
+                    <label>Hourly Rate</label>
+                    <input name="hourly_rate" type="number" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Monthly Rate</label>
+                    <input name="monthly_rate" type="number" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Monthly Income</label>
+                    <input name="monthly_income" type="number" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Percent Salary Hike</label>
+                    <input name="percent_salary_hike" type="number" class="form-control" >
+                </div>
+            </div>
+            <h4>Job Wellness</h4>
+            <!-- 4 grids -->
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label>Distance Frome Home</label>
+                    <input name="distance_from_home" type="text" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Environment Satisfaction</label>
+                    <input name="environment_satisfaction" type="number" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Job Involvement</label>
+                    <input name="job_involvement" type="number" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Job Level</label>
+                    <input name="job_level" type="number" class="form-control">
+                </div>
+            </div>
+            <!-- 4 grids -->
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label>Job Satisfaction</label>
+                    <input name="job_satisfaction"  type="number" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Performance Rating</label>
+                    <input name="performance_rating" type="number" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Relationship Satisfaction</label>
+                    <input name="relationship_satisfaction" type="number" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Work Life Balance</label>
+                    <input name="work_life_balance" type="number" class="form-control">
+                </div>
+            </div>
+
+            <br>
+            <h4>Current Job</h4>
+            <!-- 4 grids -->
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label>Stock Option Level</label>
+                    <input name="stock_option_level" type="number" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Training Times Last Year</label>
+                    <input name="training_times_last_year" type="number" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Years At Company</label>
+                    <input name="years_at_company" type="number" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Years In Current Role</label>
+                    <input name="years_in_current_role" type="number" class="form-control">
+                </div>
+            </div>
+            <!-- 4 grids -->
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label>Years Since Last Promotion</label>
+                    <input name="years_since_last_promotion" type="number" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Years With Current Manager</label>
+                    <input name="years_with_current_manager" type="number" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Business Travel</label>
+                    <select name="business_travel" class="form-control">
+                        <option>Travel Rarely</option>
+                        <option>Taravel Frequently</option>
+                        <option>Non-Travel</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Department</label>
+                    <select name="department" class="form-control">
+                        <option>Sales</option>
+                        <option>Research & Development</option>
+                        <option>Human Resources</option>
+                    </select>
+                </div>
+            </div>
+            <!-- 2 grids -->
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="text">Job Role</label>
+                    <select name="job_role" class="form-control">
+                        <option>Sales Executive</option>
+                        <option>Research Scientist</option>
+                        <option>Laboratory Technician</option>
+                        <option>Manufacturing Director</option>
+                        <option>Healthcare Representative</option>
+                        <option>Manager</option>
+                        <option>Sales Representative</option>
+                        <option>Research Director</option>
+                        <option>Human Resources</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Overtime</label>
+                    <input name="overtime" type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+<br>
+<br>
+
+        <!-- FIELD TEMPLATES -->
+
+        <!-- 1 grid -->
+        <!-- <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress2">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div> -->
+
+        <!-- 3 grids -->
+        <!-- <div class="form-row">
+            
+            <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            
+            <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+        </div> -->
+
+        <button type="submit" value="Predict" class="btn btn-primary">Predict</button>
+    </form>
+    <br>
+    <div class="block">
+    {% if result %}
+        <h2>Prediction Result:</h2>
+        <p>{{ result }}</p>
+    {% endif %}
+    </div>
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

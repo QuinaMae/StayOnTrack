@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    margin: 2%;
+    padding: 2% 4%;
+    background-image: url(bg2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5vw;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+h3 {
+    font-size: 1.5vw;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+}
+
+.shortDesc{
+    font-size: 1vw;
+}
+
+form {
+    font-size: 1vw;
+}
+
+option {
+    font-size: 1vw;
+}
+
+h1, #main-title{
+    text-align: center;
+}
+
+p, #desc{
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+.box {
+    background-color:white;
+    padding:2%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: 2px dashed #9980A6;
+}
